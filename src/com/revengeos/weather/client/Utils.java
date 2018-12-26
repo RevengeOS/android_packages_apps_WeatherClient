@@ -60,11 +60,7 @@ public class Utils {
             return false;
         }
         return true;
-    }
-
-    public static String getSystemRevision() {
-        return getSystemProperty("com.revengeos.weather.revision", "1");
-    }*/
+    } */
 
     public static class GzipRequestInterceptor implements Interceptor {
         @Override
