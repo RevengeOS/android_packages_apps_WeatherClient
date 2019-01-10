@@ -1,4 +1,4 @@
-package org.pixelexperience.weather.client;
+package com.revengeos.weather.client;
 
 import android.content.ContentProvider;
 import android.content.ContentValues;
@@ -8,7 +8,7 @@ import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.util.Log;
 
-import static org.pixelexperience.weather.client.Constants.DEBUG;
+import static com.revengeos.weather.client.Constants.DEBUG;
 
 public class WeatherContentProvider extends ContentProvider {
     private static final String TAG = "WeatherClient:WeatherContentProvider";
@@ -37,11 +37,6 @@ public class WeatherContentProvider extends ContentProvider {
             String selection,
             String[] selectionArgs,
             String sortOrder) {
-
-        /*if (!Utils.isBuildValid(getContext())) {
-            Log.e(TAG, "It seems that you're not using PixelExperience. Please update your sources or in case of cherry-picking our stuff, please revert this and build your own WeatherClient.");
-            return null;
-        }*/
 
         if (DEBUG) Log.i(TAG, "query: " + uri.toString());
         if (mWeatherChannelApi == null) {

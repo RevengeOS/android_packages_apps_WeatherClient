@@ -1,4 +1,4 @@
-package org.pixelexperience.weather.client;
+package com.revengeos.weather.client;
 
 public class WeatherInfo {
 
